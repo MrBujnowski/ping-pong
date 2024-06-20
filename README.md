@@ -1,14 +1,26 @@
-# multiplayer-pong
-An online multiplayer pong, full-stack web application made with Node.Js
+Ping Pong Multiplayer Game
 
-Live online version can be found at: https://pstefa-pong.herokuapp.com/ (US Server)
+Instalace:
+1. git clone https://github.com/MrBujnowski/ping-pong
+   cd pong-game
+   
+2. npm install
 
-# Controls
-Swipe/Use finger gestures on mobile device to control paddle
+3. node server.js
 
-Move mouse to control paddle on computer
+4. Hra bude spuštěna na localhost:80
 
-WS or UP/DOWN keys on computer
+Návod k použití
+Registrace a přihlášení
 
-# How to Play
-Enter a username and search for a match, when another player also searches for a match, the game will start.
+Po otevření aplikace se každý nový uživatel automaticky připojí a zobrazí se jim hlavní obrazovka.
+Uživatel si může zvolit své uživatelské jméno, které musí obsahovat minimálně 3 znaky a může obsahovat písmena, číslice a znaky _.-
+Hra
+
+Hra začne, jakmile jsou ve frontě dva přihlášení hráči.
+Každý hráč ovládá svou paletku pomocí šipek nahoru a dolů.
+Cílem je odpálit míček za paletku soupeře, aby získal bod.
+
+Odpojení a opětovné připojení
+Pokud se hráč odpojí během hry, hra se ukončí a ostatní hráč je o tom informován.
+Uživatel se může kdykoli opětovně připojit, zvolit si nové uživatelské jméno a pokračovat v hraní.
