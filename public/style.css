@@ -1,0 +1,128 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    touch-action: none;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    height: 10vh;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #ff8c00, #ffa500);
+    color: #1a1a1a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#online-players {
+    right: 10px;
+    position: absolute;
+}
+
+#ping {
+    font-size: 15px;
+    top: 30px;
+    left: 10px;
+    position: absolute;
+}
+
+#github-link {
+    font-size: 15px;
+    color: #ffa500;
+    left: 10px;
+    position: absolute;
+    text-decoration: none;
+}
+
+#github-link:visited {
+    color: #ffa500;
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+}
+
+#start-screen {
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    background: rgba(26, 26, 26, 0.9);
+    border-radius: 10px;
+    border: 2px solid #ffa500;
+    padding: 20px;
+}
+
+#input-username[type='text'] {
+    background-color: #333;
+    border: 2px solid #ffa500;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #ffa500;
+    color: #1a1a1a;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+}
+
+#match-making {
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 250px;
+    background: rgba(26, 26, 26, 0.9);
+    border-radius: 10px;
+    border: 2px solid #ffa500;
+    padding: 20px;
+}
+
+#gameplay {
+    position: relative;
+    background: #00008b;
+    height: 90vh;
+    width: 100%;
+}
+
+@media (pointer: none), (pointer: coarse) {
+    #gameplay {
+        height: 75vh;
+    }
+}
+
+#drawing-canvas {
+    touch-action: none;
+    border: 5px solid #ffa500;
+    cursor: none;
+}
